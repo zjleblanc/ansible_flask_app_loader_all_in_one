@@ -1,0 +1,7 @@
+---
+- name: Deploy Database
+  import_playbook: provision_database_tier.yml
+- name: Deploy App
+  import_playbook: provision_app_tier.yml
+- name: Deploy Load Balancer
+  import_playbook: provision_load_tier.yml
